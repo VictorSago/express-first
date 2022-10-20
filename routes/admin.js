@@ -9,7 +9,7 @@ router.get("/add-product", (req, res, next) => {
   rstring += "<body>";
   rstring += '<h1>The "Add Product" page</h1>';
   rstring +=
-    '<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>';
+    '<form action="/admin/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>';
   rstring += "</body></html>";
   res.send(rstring);
 });
